@@ -32,7 +32,6 @@ B6: → Chrome nhận file HTML, CSS, JS → render ra giao diện → bạn th�
     </div>
 
 Câu A2 - Semantic HTML (tuan_1_html5/00_design_thinking_layout.md + phần 5)
-Lỗi semantic:
 - Lỗi 1: Dùng thẻ `<div>` cho phần header
 - Lỗi 2: Dùng thẻ `<div>` cho phần main
 - Lỗi 3: Dùng thẻ `<div>` cho phần footer
