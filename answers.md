@@ -30,13 +30,15 @@ B6: → Chrome nhận file HTML, CSS, JS → render ra giao diện → bạn th�
     <div>
     <img src="images/Screenshot 2026-04-19 013700.png" style="width: 1000px; height: 600px; ">
     </div>
+    
 Câu A2 - Semantic HTML (tuan_1_html5/00_design_thinking_layout.md + phần 5)
 -Lỗi 1: Dùng thẻ <div> cho phần header
 -Lỗi 2: Dùng thẻ <div> cho phần main
 -Lỗi 3: Dùng thẻ <div> cho phần footer
 -Lỗi 4: Thẻ <img> chưa có thuộc tính alt
 Sửa lại:
-```<header class="header">
+```html
+<header class="header">
     <div class="logo">ShopTLU</div>
     <div class="menu">
         <div><a href="/">Trang chủ</a></div>
@@ -50,7 +52,8 @@ Sửa lại:
         <div class="image"><img src="iphone.jpg" alt="ảnh điện thoại"></div>
     </div>
 </main>
-<footer class="footer">© 2026 ShopTLU</footer>```html
+<footer class="footer">© 2026 ShopTLU</footer>
+```html
 
 Câu A3 - Block vs Inline (tuan_1_html5/00_design_thinking_layout.md + phần 6 mục 6.1)
 Kết quả:
