@@ -128,4 +128,86 @@ Trong trang shopee.vn có:
 
 Phần C:
 Câu C1:
-
+```html
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Chi tiết sản phẩm</title>
+    </head>
+    <body>
+        <!-- Header vì đây là phần đầu trang -->
+        <header class="section-header"> 
+            <nav> <!-- nav vì đây là phần điều hướng -->
+                <ul> <!-- ul vì đây là phần danh sách -->
+                    <li><a href="#">Trang chủ</a></li> <!-- li vì đây là phần tử của danh sách -->
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> <!-- main vì đây là phần nội dung chính của trang -->
+            <nav aria-label="breadcrumb"> <!-- nav vì đây là phần điều hướng -->
+                <ol class="breadcrumb" style="list-style-type: ' > ' ; display: flex; gap: 20px"> <!-- ol vì đây là phần danh sách có thứ tự -->
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Sản phẩm</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Chi tiết sản phẩm</li>
+                </ol>
+            </nav>
+            <figure class="product-pictures"> <!-- figure vì đây là phần chứa hình ảnh sản phẩm -->
+                <img src="https://placehold.co/300x200" alt="a"> <!-- img vì đây là phần hình ảnh -->
+                <img src="https://placehold.co/300x200" alt="a">
+                <img src="https://placehold.co/300x200" alt="a">    
+                <img src="https://placehold.co/300x200" alt="a">
+                <img src="https://placehold.co/300x200" alt="a">
+            </figure>
+            <article class="product-infor"> <!-- article vì đây là phần chứa thông tin chi tiết về sản phẩm -->
+                <div class="product-name"> <!-- div vì đây là phần chứa tên sản phẩm -->
+                    <h1>Tên sản phẩm</h1> <!-- h1 vì đây là phần tiêu đề chính của sản phẩm -->
+                </div>
+                <div class="product-price"> <!-- div vì đây là phần chứa giá sản phẩm -->
+                    <p>Giá: 100,000 VND</p> <!-- p vì đây là phần đoạn văn chứa giá sản phẩm -->
+                </div>
+                <div class="product-review"> <!-- div vì đây là phần chứa đánh giá sản phẩm -->
+                    <p>Đánh giá: ⭐⭐⭐</p> <!-- p vì đây là phần đoạn văn chứa đánh giá sản phẩm -->
+                </div>
+                <div class="product-description"> <!-- div vì đây là phần chứa mô tả sản phẩm -->
+                    <h2>Mô tả sản phẩm</h2> <!-- h2 vì đây là phần tiêu đề phụ của mô tả sản phẩm -->
+                    <p>Mô tả sản phẩm sẽ được hiển thị ở đây.</p> <!-- p vì đây là phần đoạn văn chứa mô tả sản phẩm -->
+                </div>
+            </article>
+            <table border="1"> <!-- table vì đây là phần bảng chứa thông số kỹ thuật -->
+                <caption>Thông số kỹ thuật</caption> <!-- caption vì đây là phần tiêu đề của bảng -->
+                <tr> <!-- tr vì đây là phần hàng của bảng -->
+                    <td>Kích thước</td> <!-- td vì đây là phần ô chứa dữ liệu -->
+                    <td>30cm x 20cm x 10cm</td>
+                </tr>
+                <tr>
+                    <td>Trọng lượng</td>
+                    <td>500g</td>
+                </tr>
+                <tr>
+                    <td>Chất liệu</td>
+                    <td>Nhựa cao cấp</td>
+                </tr>
+            </table> 
+            <div class="review-section"> <!-- div vì đây là phần chứa phần đánh giá sản phẩm -->
+                <h3>Đánh giá sản phẩm</h3> <!-- h3 vì đây là phần tiêu đề phụ của phần đánh giá sản phẩm -->
+                <p>Chưa có đánh giá nào cho sản phẩm này.</p> <!-- p vì đây là phần đoạn văn chứa thông tin đánh giá sản phẩm -->
+            </div>
+        </main>
+        <aside class="sidebar"> <!-- aside vì đây là phần chứa nội dung phụ, không phải là phần chính của trang -->
+                <h3>Sản phẩm liên quan</h3> <!-- h3 vì đây là phần tiêu đề phụ của phần sản phẩm liên quan -->
+                <ul> <!-- ul vì đây là phần danh sách chứa các sản phẩm liên quan -->
+                    <li><a href="#">Sản phẩm A</a></li> <!-- li vì đây là phần tử của danh sách -->
+                    <li><a href="#">Sản phẩm B</a></li>
+                    <li><a href="#">Sản phẩm C</a></li>
+                </ul>
+            </aside>
+        <footer> <!-- footer vì đây là phần chân trang của trang web -->
+            <p>&copy; 2026 Vũ Mai Anh</p> <!-- p vì đây là phần đoạn văn chứa thông tin bản quyền -->
+        </footer>
+    </body>
+</html>
+```
