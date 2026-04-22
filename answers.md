@@ -1,3 +1,4 @@
+Phần A:  
 Câu A1 - HTTP & Browser (tuan_1_html5/01_introduction_html_universe.md + Cuộc Hành Trình 0.3 Giây Xuyên Đại Dương (ý 1) và phần 4 mục 4.3 (ý 2))
 1. Khi bạn gõ https://shopee.vn vào trình duyệt và nhấn Enter:
 B1: Request của bạn xuất phát từ laptop → đi qua router WiFi nhà trọ
@@ -75,8 +76,56 @@ Thẻ	        | Vai trò	    | Ghi nhớ
 
 Lý do KHÔNG NÊN dùng table để tạo layout trang web:
 - Bảng có cấu trúc rất cứng nhắc. Trên màn hình điện thoại, bảng sẽ không thể tự động xếp chồng các cột lên nhau thành hàng dọc được. Điều này dẫn đến việc người dùng phải cuộn ngang để xem hết trang web.
-- Cơ chế của Table: Trình duyệt thường phải đợi tải xuống toàn bộ code của bảng rồi mới bắt đầu tính toán kích thước các ô và hiển thị chúng ra màn hình 
--> Tốc độ tải trang chậm
+- Cơ chế của Table: Trình duyệt thường phải đợi tải xuống toàn bộ code của bảng rồi mới bắt đầu tính toán kích thước các ô và hiển thị chúng ra màn hình -> Tốc độ tải trang chậm
 - Chỉ dùng table cho DATA tabular.
 
- 
+ Phần B:  
+Bài B3:
+- Lỗi 1: Dòng 4 — Thẻ `<title>` thiếu thẻ `</title>` — Cách sửa thêm thẻ `</title>` vào sau Trang web
+- Lỗi 2: Dòng 5 — Giá trị của charset sai — Sửa "utf8" -> "UTF-8"
+- Lỗi 3: Dòng 8 — Thiếu thẻ đóng `</h1>` — Thay `<h1>` sau chữ TLU -> `</h1>`
+- Lỗi 4: Dòng 12 — Thiếu thẻ đóng `</a>` — Thay `<a>` sau chữ Trang chủ -> `</a>`
+- Lỗi 5: Dòng 22 — Thẻ đóng `</b>` nằm ngoài phần tử p — Cho thẻ `</b>` đứng trước thẻ `</p>`
+- Lỗi 6: Dòng 40 và 42 — Phần tử main không nên dùng cho nội dung sidebar — Thay phần tử main bằng phần tử aside
+- Lỗi 7: Dòng 45 — Thiếu thẻ đóng `</p>` — Thêm `</p>` sau 2026 
+- Lỗi 8: Dòng 48 — Thiếu thẻ đóng `</html>` — Thêm `</html>` ở dòng này
+- Lỗi 9: Dòng 1 — Lời khai báo bị thiếu html — Thêm html sau DOCTYPE
+- Lỗi 10: Dòng 20 — Giá trị của href không đặt trong ngoặc kép và thẻ `<img>` thiếu thộc tính alt — Sửa iphone.jpg -> "iphone.jpg" và thêm thuộc tính alt="Ảnh điện thoại"
+
+Bài B4:
+Trong trang shopee.vn có:
+1. 
+- 3 thẻ semantic HTML5 mà trang đang sử dụng:
+
++ Thẻ `<header>` nằm bên trong thẻ `<div class="t5PFIU">`, là thành phần con trực tiếp của thẻ div này.  
+<img src="screenshots/headerTag.png" style="width: 1000px; height: 600px">
+
++ Thẻ `<nav>` nằm nằm bên trong thẻ `<header>`đã nêu ở trên.  
+<img src="screenshots/navTag.png" style="width: 1000px; height: 600px">
+
++ Thẻ `<section>` nằm ngay trên thẻ `<div class="shopee-progress-bar">`, là một thành phần con trong khối nội dung chính.  
+<img src="screenshots/sectionTag.png" style="width: 1000px; height: 600px">
+
+- Thẻ mà trang đó KHÔNG dùng đúng semantic  
++ Thẻ `<div id="main">` 
+2. 
+<img src="screenshots/tableTag1.png" style="width: 1000px; height: 600px">
+<img src="screenshots/tableTag2.png" style="width: 1000px; height: 600px">
+
+- Table hiển thị nội dung hồ sơ của người dùng
+- Không dùng `<thead>`, `<tbody>`
+3. 
+<img src="screenshots/formTag1.png" style="width: 1000px; height: 600px">
+<img src="screenshots/formTag2.png" style="width: 1000px; height: 600px">
+
+- Form có:
++ action: "https://shopee.vn/user/account/profile"
++ method: "get"
+- Input types:
++ type="text"
++ type="button"
++ role="radio"
+
+Phần C:
+Câu C1:
+
