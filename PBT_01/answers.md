@@ -74,7 +74,7 @@ Thẻ	        | Vai trò	    | Ghi nhớ
 `<tbody>`     | Body	        | Dữ liệu chính
 `<tfoot>`	    | Footer	    | Tổng kết
 
-Lý do KHÔNG NÊN dùng table để tạo layout trang web:
+Lý do KHÔNG NÊN dùng table để tạo layout trang web:  
 - Bảng có cấu trúc rất cứng nhắc. Trên màn hình điện thoại, bảng sẽ không thể tự động xếp chồng các cột lên nhau thành hàng dọc được. Điều này dẫn đến việc người dùng phải cuộn ngang để xem hết trang web.
 - Cơ chế của Table: Trình duyệt thường phải đợi tải xuống toàn bộ code của bảng rồi mới bắt đầu tính toán kích thước các ô và hiển thị chúng ra màn hình -> Tốc độ tải trang chậm
 - Chỉ dùng table cho DATA tabular.
@@ -118,10 +118,11 @@ Trong trang shopee.vn có:
 <img src="screenshots/formTag1.png" style="width: 1000px; height: 600px">
 <img src="screenshots/formTag2.png" style="width: 1000px; height: 600px">
 
-- Form có:
+- Form có:  
 + action: "https://shopee.vn/user/account/profile"
 + method: "get"
-- Input types:
+
+- Input types:  
 + type="text"
 + type="button"
 + role="radio"
@@ -213,3 +214,14 @@ Câu C1:
 ```
 Câu C2:  
 Nhận định chỉ dùng `<div>` là một sai lầm về tư duy tối ưu sản phẩm. Thứ nhất, về SEO, Googlebot sử dụng các thẻ như `<main>`, `<article>`, `<nav>` để lập chỉ mục. Nếu chỉ dùng div, cấu trúc trang trở nên 'phẳng lì', khiến bộ máy tìm kiếm khó xác định đâu là nội dung cốt lõi, dẫn đến giảm thứ hạng cạnh tranh. Thứ hai, về Accessibility (A11y), người khiếm thị sử dụng Screen Reader sẽ dựa vào các cột mốc từ thẻ semantic để điều hướng. Một trang web toàn div sẽ khiến họ 'lạc lối' vì máy không thể thông báo đâu là menu, đâu là nội dung chính. Khi dùng `<nav>`, trình duyệt tự động hiểu đây là khu vực điều hướng. Người dùng có thể nhấn phím tắt để nhảy thẳng đến menu mà không cần đọc qua hàng chục dòng code khác. Tuy nhiên, `<div>` vẫn có chỗ đứng riêng. Nó là lựa chọn hoàn hảo khi bạn cần một 'thùng chứa' thuần túy để phục vụ mục đích dàn trang hoặc bọc các phần tử lại để áp dụng CSS (như Flexbox/Grid) mà không mang ý nghĩa nội dung cụ thể nào. 
+
+Phần D:  
+Bước 1: Tải OBS Studio → obsproject.com
+Bước 2: Sources → thêm "Display Capture" (quay màn hình)
+Bước 3: Sources → thêm "Video Capture Device" (webcam)
+Bước 4: Kéo webcam về góc phải dưới, resize cho nhỏ (~200px)
+Bước 5: Settings → Output → Recording:
+         - Format: mp4
+         - Encoder: x264
+         - Quality: High Quality, Medium File Size
+Bước 6: Settings → Video → Output Resolution: 1280x720
