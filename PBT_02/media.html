@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu sản phẩm</title>
+</head>
+<body>
+    <h1>Giới thiệu sản phẩm</h1>
+    <main>
+        <figure>
+            <img src="https://placehold.co/300x200" alt="Hộp nhựa đa năng đựng hoa quả đồ ăn tiện lợi">
+            <ficaption>Hộp nhựa đa năng</ficaption>
+        </figure>
+        <figure>
+            <img src="https://placehold.co/300x200" alt="Áo thun mềm mại thoáng mát chất liệu cotton">
+            <ficaption>Áo thun chất liệu cotton</ficaption>
+        </figure>
+        <figure>
+            <img src="https://placehold.co/300x200" alt="Thìa ăn cơm hình hươu cao cổ cho trẻ em">
+            <ficaption>Thìa ăn cơm hình hươu cao cổ</ficaption>
+        </figure>
+        <figure>
+            <img src="https://placehold.co/300x200"
+             alt="Túi đựng rác màu đen 5kg"
+             loading="lazy">
+            <ficaption>Túi đựng rác màu đen 5kg</ficaption>
+        </figure>
+        <figure>
+            <img src="https://placehold.co/300x200" 
+            alt="Cốc thủy tinh"
+            loading="lazy">
+            <ficaption>Cốc thủy tinh</ficaption>
+        </figure>
+        <figure>
+            <img src="https://placehold.co/300x200"
+            alt="Ví đựng tiền mini màu đỏ"
+            loading="lazy">
+            <ficaption>Ví đựng tiền mini</ficaption>
+        </figure>
+        <iframe width="320" 
+            height="576" 
+            src="https://www.youtube.com/embed/8hbeGvxrHI4" 
+            title="Áo lẻ sọc phối chân váy hoặc quần tây" 
+            frameborder="0" 
+            allow="accelerometer; 
+            autoplay; 
+            clipboard-write; 
+            encrypted-media; 
+            gyroscope; 
+            picture-in-picture; 
+            web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+        <video controls
+            width="640"
+            height="360"
+            poster="images/anh_mac_dinh.jpg"
+            preload="metadata">
+            <source src="videos/video_demo1.webm" type="video/webm">   <!-- WebM trước — nhẹ hơn -->
+            <source src="videos/video_demo1.mp4" type="video/mp4">    <!-- MP4 fallback -->
+            <p>Browser không hỗ trợ HTML5 video.
+            <a href="videos/video_demo1.mp4">Tải video trực tiếp</a>
+            </p>
+        </video>
+        <audio controls preload="none">
+            <source src="sounds/1 Pista de Audio.ogg" type="audio/ogg">
+            <source src="sounds/1 Pista de Audio.mp3" type="audio/mpeg">
+            <p>Browser không hỗ trợ HTML5 audio.</p>
+        </audio>
+        <picture style="max-width: 100%; height: auto;">
+            <source srcset="product.avif" type="image/avif">
+            <source srcset="product.webp" type="image/webp">
+            <img src="images/anh_mac_dinh.jpg"
+                alt="Sản phẩm"
+                loading="lazy">
+        </picture>
+        <svg width="24" height="24" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-label="Thêm vào giỏ hàng" role="img">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor"/>
+            <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor"/>
+        </svg>
+    </main>
+</body>
+</html>
