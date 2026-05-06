@@ -27,7 +27,33 @@ Câu A2 - Validation Attributes (tuan_1_html5/07_forms_interactive.md + mục 3)
 - TH5:
 ```html<input type="password" minlength="8" value="123">```
 -> Màn hình hiện thông báo nhập giá trị quá ngắn vì minlength="8"
+KẾT QUẢ:
+- TH1:
+<img src="../PBT_02/images/anh_th1.png">
+
+- TH2:
+<img src="../PBT_02/images/anh_th2.png">
+
+- TH3:
+<img src="../PBT_02/images/anh_th3.png">
+
+- TH4:
+<img src="../PBT_02/images/anh_th4.png">
+
+- TH5:
+<img src="../PBT_02/images/anh_th5.png">  
+
+Dự đoán vs Thực tế:  
+Trường hợp	        | Thuộc tính gây lỗi    | Validity State (Thực tế)  | Trạng thái :invalid 
+| :--- | :--- | :--- | :--- | :--- | 
+1. Để trống	    | required	          | valueMissing: true    | có
+2. Gõ "abc"     | type="email"        | typeMismatch: true    | có
+3. Gõ "15"	    | min="1" max="10"    | rangeOverflow: true   | có
+4. Gõ "abc123"  | pattern="[0-9]{10}" | patternMismatch: true | có
+5. Gõ "123"     | minlength="8"       | tooShort: true        | có  
+
 Câu A3
+
 Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)
 1. Thuộc tính loading="lazy" trên thẻ <img>. 
 - Cải thiện tốc độ tải của trang web
