@@ -44,13 +44,13 @@ KẾT QUẢ:
 <img src="../PBT_02/images/anh_th5.png">  
 
 Dự đoán vs Thực tế:  
-Trường hợp	        | Thuộc tính gây lỗi    | Validity State (Thực tế)  | Trạng thái :invalid 
-| :--- | :--- | :--- | :--- | :--- | 
-1. Để trống	    | required	          | valueMissing: true    | có
-2. Gõ "abc"     | type="email"        | typeMismatch: true    | có
-3. Gõ "15"	    | min="1" max="10"    | rangeOverflow: true   | có
-4. Gõ "abc123"  | pattern="[0-9]{10}" | patternMismatch: true | có
-5. Gõ "123"     | minlength="8"       | tooShort: true        | có  
+Trường hợp	        | Thuộc tính gây lỗi    | Validity State (Thực tế)  | Trạng thái :invalid |
+| :---        | :---                | :---                  | :---      | 
+ Để trống	    | required	          | valueMissing: true    | có        |
+ Gõ "abc"     | type="email"        | typeMismatch: true    | có        |
+ Gõ "15"	    | min="1" max="10"    | rangeOverflow: true   | có        |
+ Gõ "abc123"  | pattern="[0-9]{10}" | patternMismatch: true | có        |
+ Gõ "123"     | minlength="8"       | tooShort: true        | có        |
 
 Câu A3
 
