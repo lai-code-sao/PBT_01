@@ -35,7 +35,7 @@ KẾT QUẢ:
 <img src="../PBT_02/images/anh_th2.png">
 
 - TH3:
-<img src="../PBT_02/images/anh_th3.png">
+<img src="../PBT_02/images/anh-th3.png">
 
 - TH4:
 <img src="../PBT_02/images/anh_th4.png">
