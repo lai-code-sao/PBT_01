@@ -1,5 +1,5 @@
 Phần A:  
-Câu A1 - Input Types  
+Câu A1 - Input Types (tuan_1_html5/07_forms_interactive.md + mục 3)  
 10 input types khác nhau trong HTML5:  
 1. type="text" -> Ô nhập text, giới hạn độ dài, kiểm tra nhập đúng định dạng (pattern) -> Dùng cho form đăng ký, đăng nhập
 2. type="email" → Ô nhập text, tự kiểm tra có @ → Dùng cho form đăng ký
@@ -10,8 +10,24 @@ Câu A1 - Input Types
 7. type="time" -> Bảng chọn giờ/phút, giới hạn giá trị -> Dùng để khách hàng chọn khung giờ giao hàng
 8. type="color" -> Bảng chọn màu khi click một ô hiển thị màu -> Dùng trong trang quản trị để tùy chỉnh màu sắc giao diện cửa hàng hoặc nhãn dán sản phẩm
 9. type="range" -> Một thanh trượt để chọn giá trị trong một khoảng định sẵn, giới hạn giá trị -> Dùng trong bộ lọc tìm kiếm để chọn khoảng giá sản phẩm
-10. type="file" -> Cửa sổ duyệt file trên thiết bị, giới hạn định dạng (accept) và số lượng (multiple) ->  Khách hàng tải ảnh hoặc video thực tế khi viết đánh giá (review) sản phẩm
-
+10. type="file" -> Cửa sổ duyệt file trên thiết bị, giới hạn định dạng (accept) và số lượng (multiple) ->  Khách hàng tải ảnh hoặc video thực tế khi viết đánh giá (review) sản phẩm  
+Câu A2 - Validation Attributes (tuan_1_html5/07_forms_interactive.md + mục 3)  
+- TH1: 
+```html<input type="text" required value="">```
+-> Ô nhập màu đỏ hoặc màn hình hiện dòng cảnh báo vì có required  
+- TH2:
+```html<input type="email" value="abc">```
+-> Màn hình hiện thông báo nhập sai định dạng email vì type="email" tự động kiểm tra định dạng  
+- TH3:
+```html<input type="number" min="1" max="10" value="15">```
+-> Màn hình hiện thông báo nhập giá trị quá lớn so với giới hạn vì max="10"  
+- TH4:
+```html<input type="text" pattern="[0-9]{10}" value="abc123">```
+-> Màn hình hiện thông báo nhập sai định dạng vì pattern yêu cầu nhập đủ 10 số 0->9
+- TH5:
+```html<input type="password" minlength="8" value="123">```
+-> Màn hình hiện thông báo nhập giá trị quá ngắn vì minlength="8"
+Câu A3
 Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)
 1. Thuộc tính loading="lazy" trên thẻ <img>. 
 - Cải thiện tốc độ tải của trang web
