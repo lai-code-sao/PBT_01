@@ -1,12 +1,11 @@
 Phần A:  
 Câu A1 - HTTP & Browser (tuan_1_html5/01_introduction_html_universe.md + Cuộc Hành Trình 0.3 Giây Xuyên Đại Dương (ý 1) và phần 4 mục 4.3 (ý 2))
 1. Khi bạn gõ https://shopee.vn vào trình duyệt và nhấn Enter:
-B1: Request của bạn xuất phát từ laptop → đi qua router WiFi nhà trọ
-B2: → Qua nhà mạng VNPT → chạy trong tuyến cáp nội địa
-B3: → Đến data center của Sea Limited tại Hà Nội
-B4: → Server xử lý: "Bạn muốn xem danh sách sản phẩm"
-B5: → Response chạy ngược lại: cáp nội địa → VNPT → router → laptop
-B6: → Chrome nhận file HTML, CSS, JS → render ra giao diện → bạn thấy danh sách sản phẩm
+B1: Phân giải tên miền -> địa chỉ IP
+B2: Thiết lập kết nối (TCP & TLS Handshake)
+B3: Trình duyệt gửi một bản tin HTTP GET Request tới máy chủ
+B4: Máy chủ của Shopee nhận yêu cầu, xử lý (kiểm tra kho hàng, khuyến mãi, tài khoản của bạn) và gửi lại một bản tin HTTP Response
+B5: Chrome nhận file HTML, CSS, JS → render ra giao diện → bạn thấy danh sách sản phẩm
 2. Trong DevTools của Chrome, tab Network cho thấy thông tin:
 - Số requests được gửi
 - Số dữ liệu thực tế đã được gửi qua đường dây mạng từ server về máy tính của bạn.
@@ -68,11 +67,11 @@ Giải thích:
 
 Câu A4 - Table (tuan_1_html5/05_tables_hyperlinks.md + phần table)
 
-Thẻ	        | Vai trò	    | Ghi nhớ
-| :--- | :--- | :--- | 
-`<thead>`	    | Header	    | Tiêu đề cột
-`<tbody>`     | Body	        | Dữ liệu chính
-`<tfoot>`	    | Footer	    | Tổng kết
+Thẻ	        | Vai trò	    | Ghi nhớ       |
+| :---      | :---          | :---          | 
+`<thead>`	| Header	    | Tiêu đề cột   |
+`<tbody>`   | Body	        | Dữ liệu chính |
+`<tfoot>`   | Footer	    | Tổng kết      |
 
 Lý do KHÔNG NÊN dùng table để tạo layout trang web:  
 - Bảng có cấu trúc rất cứng nhắc. Trên màn hình điện thoại, bảng sẽ không thể tự động xếp chồng các cột lên nhau thành hàng dọc được. Điều này dẫn đến việc người dùng phải cuộn ngang để xem hết trang web.
@@ -212,16 +211,5 @@ Câu C1:
     </body>
 </html>
 ```
-Câu C2:  
+Câu C2: (tuan_1_html5/00_design_thinking_layout.md + mục 7)  
 Nhận định chỉ dùng `<div>` là một sai lầm về tư duy tối ưu sản phẩm. Thứ nhất, về SEO, Googlebot sử dụng các thẻ như `<main>`, `<article>`, `<nav>` để lập chỉ mục. Nếu chỉ dùng div, cấu trúc trang trở nên 'phẳng lì', khiến bộ máy tìm kiếm khó xác định đâu là nội dung cốt lõi, dẫn đến giảm thứ hạng cạnh tranh. Thứ hai, về Accessibility (A11y), người khiếm thị sử dụng Screen Reader sẽ dựa vào các cột mốc từ thẻ semantic để điều hướng. Một trang web toàn div sẽ khiến họ 'lạc lối' vì máy không thể thông báo đâu là menu, đâu là nội dung chính. Khi dùng `<nav>`, trình duyệt tự động hiểu đây là khu vực điều hướng. Người dùng có thể nhấn phím tắt để nhảy thẳng đến menu mà không cần đọc qua hàng chục dòng code khác. Tuy nhiên, `<div>` vẫn có chỗ đứng riêng. Nó là lựa chọn hoàn hảo khi bạn cần một 'thùng chứa' thuần túy để phục vụ mục đích dàn trang hoặc bọc các phần tử lại để áp dụng CSS (như Flexbox/Grid) mà không mang ý nghĩa nội dung cụ thể nào. 
-
-Phần D:  
-Bước 1: Tải OBS Studio → obsproject.com
-Bước 2: Sources → thêm "Display Capture" (quay màn hình)
-Bước 3: Sources → thêm "Video Capture Device" (webcam)
-Bước 4: Kéo webcam về góc phải dưới, resize cho nhỏ (~200px)
-Bước 5: Settings → Output → Recording:
-         - Format: mp4
-         - Encoder: x264
-         - Quality: High Quality, Medium File Size
-Bước 6: Settings → Video → Output Resolution: 1280x720
