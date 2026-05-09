@@ -11,6 +11,7 @@ Câu A1 - Input Types (tuan_1_html5/07_forms_interactive.md + mục 3)
 8. type="color" -> Bảng chọn màu khi click một ô hiển thị màu -> Dùng trong trang quản trị để tùy chỉnh màu sắc giao diện cửa hàng hoặc nhãn dán sản phẩm
 9. type="range" -> Một thanh trượt để chọn giá trị trong một khoảng định sẵn, giới hạn giá trị -> Dùng trong bộ lọc tìm kiếm để chọn khoảng giá sản phẩm
 10. type="file" -> Cửa sổ duyệt file trên thiết bị, giới hạn định dạng (accept) và số lượng (multiple) ->  Khách hàng tải ảnh hoặc video thực tế khi viết đánh giá (review) sản phẩm  
+
 Câu A2 - Validation Attributes (tuan_1_html5/07_forms_interactive.md + mục 3)  
 - TH1: 
 ```html<input type="text" required value="">```
@@ -52,7 +53,8 @@ Trường hợp	        | Thuộc tính gây lỗi    | Validity State (Thực t
  Gõ "abc123"  | pattern="[0-9]{10}" | patternMismatch: true | có        |
  Gõ "123"     | minlength="8"       | tooShort: true        | có        |
 
-Câu A3
+Câu A3 - Accessibility
+
 
 Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)
 1. Thuộc tính loading="lazy" trên thẻ `<img>`. 
@@ -69,7 +71,8 @@ Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)
 - alt tốt cho 3 trường hợp:
 + Ảnh sản phẩm iPhone 16 -> alt="iPhone 16 Pro Max 265GB màu Titan"
 + Ảnh trang trí (decorative) -> alt=""
-+ Ảnh biểu đồ doanh thu Q1/2026 -> alt="Biểu đồ đường hiển thị doanh thu quý 1 năm 2026 có xu hướng tăng"
++ Ảnh biểu đồ doanh thu Q1/2026 -> alt="Biểu đồ đường hiển thị doanh thu quý 1 năm 2026 có xu hướng tăng"  
+
 Câu A5 - So sánh `<figure>` vs `<img>` (tuan_1_html5/06_graphics_multimedia.md + mục 3)  
 - Dùng Cách 1 khi ảnh chỉ mang tính chất trang trí hoặc minh họa nhỏ lẻ không cần chú thích
 - Dùng Cách 2 khi ảnh là một phần quan trọng của nội dung bài viết và cần có tiêu đề hoặc chú thích bên dưới  
