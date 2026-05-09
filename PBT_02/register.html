@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="#" method="post">
-        <div class="personal-info">
-            <h2>Thông tin cá nhân</h2>
+        <fieldset class="personal-info">
+            <legend>Thông tin cá nhân</legend>
             <label for="name">Họ tên:</label>
             <input type="text"
             name="name" 
@@ -31,9 +31,9 @@
             id="phone-number"
             pattern="0[0-9]{10}"
             placeholder="0123456789">
-        </div>
-        <div class="account">
-            <h2>Tài khoản</h2>
+        </fieldset>
+        <fieldset class="account">
+            <legend>Tài khoản</legend>
             <label for="username">Username:</label>
             <input type="text"
             name="username" 
@@ -47,9 +47,9 @@
             pattern="(?=.*\d)(?=.*[A-Z]).+"
             minlength="8"
             placeholder="Mật khẩu">
-        </div>
-        <div class="delivery-info">
-            <h2>Thông tin giao hàng</h2>
+        </fieldset>
+        <fieldset class="delivery-info">
+            <legend>Thông tin giao hàng</legend>
             <label for="city">Thành phố:</label>
             <select name="city" id="city">
                 <option value="">--Chọn thành phố--</option>
@@ -81,7 +81,7 @@
             <label for="female">Nữ</label>
             <input type="radio" name="gender" id="other" >
             <label for="other">Khác</label>
-        </div>
+        </fieldset>
         <div class="end-form">
             <input type="checkbox" name="clause" id="clause" required>
             <label for="clause">Đồng ý điều khoản</label>
