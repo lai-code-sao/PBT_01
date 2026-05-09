@@ -15,19 +15,22 @@
             id="name"
             required
             minlength="2"
-            maxlength="50">
+            maxlength="50"
+            placeholder="Họ và tên">
 
             <label for="email">Email:</label>
             <input type="email"
             name="email"
             id="email"
-            required>
+            required
+            placeholder="abc@gmail.com">
 
             <label for="phone-number">Số điện thoại:</label>
             <input type="tel" 
             name="phone-number" 
             id="phone-number"
-            pattern="0[0-9]{10}">
+            pattern="0[0-9]{10}"
+            placeholder="0123456789">
         </div>
         <div class="account">
             <h2>Tài khoản</h2>
@@ -35,13 +38,60 @@
             <input type="text"
             name="username" 
             id="username"
+            placeholder="Tên tài khoản"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,20}">
             <label for="password">Password:</label>
             <input type="password" 
             name="password" 
             id="password"
             pattern="(?=.*\d)(?=.*[A-Z]).+"
-            minlength="8">
+            minlength="8"
+            placeholder="Mật khẩu">
+        </div>
+        <div class="delivery-info">
+            <h2>Thông tin giao hàng</h2>
+            <label for="city">Thành phố:</label>
+            <select name="city" id="city">
+                <option value="">--Chọn thành phố--</option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="hungyen">Hưng Yên</option>
+                <option value="bacninh">Bắc Ninh</option>
+                <option value="hagiang">Hà Giang</option>
+                <option value="caobang">Cao Bằng</option>
+            </select>
+
+            <label for="district">Quận/huyện:</label>
+            <select name="district" id="district">
+                <option value="">--Chọn quận/huyện--</option>
+                <option value="kienxuong">Kiến Xương</option>
+                <option value="tienhai">Tiền Hải</option>
+                <option value="hungha">Hưng Hà</option>
+            </select>
+            
+            <label for="address">Địa chỉ chi tiết:</label>
+            <textarea name="address" 
+            id="address"
+            rows="3">
+            </textarea>
+
+            <p>Giới tính:</p>
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" >
+            <label for="female">Nữ</label>
+            <input type="radio" name="gender" id="other" >
+            <label for="other">Khác</label>
+        </div>
+        <div class="end-form">
+            <input type="checkbox" name="clause" id="clause" required>
+            <label for="clause">Đồng ý điều khoản</label>
+            <br>
+            <button type="submit" 
+            aria-label="Đăng ký"
+            style="width: 100px; height: 50px;">Đăng ký</button>
+            <button type="reset" 
+            aria-label="Làm mới"
+            style="width: 100px; height: 50px;">Làm mới</button>
         </div>
     </form>
 </body>
