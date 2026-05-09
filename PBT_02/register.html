@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="personal-info">
+            <h2>Thông tin cá nhân</h2>
+            <label for="name">Họ tên:</label>
+            <input type="text"
+            name="name" 
+            id="name"
+            required
+            minlength="2"
+            maxlength="50">
+
+            <label for="email">Email:</label>
+            <input type="email"
+            name="email"
+            id="email"
+            required>
+
+            <label for="phone-number">Số điện thoại:</label>
+            <input type="tel" 
+            name="phone-number" 
+            id="phone-number"
+            pattern="0[0-9]{10}">
+        </div>
+        <div class="account">
+            <h2>Tài khoản</h2>
+            <label for="username">Username:</label>
+            <input type="text"
+            name="username" 
+            id="username"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,20}">
+            <label for="password">Password:</label>
+            <input type="password" 
+            name="password" 
+            id="password"
+            pattern="(?=.*\d)(?=.*[A-Z]).+"
+            minlength="8">
+        </div>
+    </form>
+</body>
+</html>
