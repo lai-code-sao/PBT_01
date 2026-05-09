@@ -6,14 +6,29 @@
     <title>Đặt hàng</title>
 </head>
 <body>
+    <div class="search">
+        <label for="searchProduct">Tìm kiếm sản phẩm:</label>
+        <input list="listProduct" 
+        id="searchProduct"
+        name="searchProduct"
+        placeholder="Tìm kiếm">
+        <datalist id="listProduct">
+            <option value="aothudong">Áo thu đông</option>
+            <option value="quanbo">Quần bò</option>
+            <option value="tat">Tất</option>
+        </datalist>
+    </div>
+    
     <table border="1">
         <caption>Giỏ hàng </caption>
         <thead>
-            <th>STT</th>
-            <th>Sản phẩm</th>
-            <th>Đơn giá</th>
-            <th>Số lượng</th>
-            <th>Thành tiển</th>
+            <tr>
+                <th>STT</th>
+                <th>Sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiển</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -40,19 +55,24 @@
         </tbody>
         <tfoot>
             <td colspan="4">Tổng</td>
-            <td>350.000đ</td>
+            <td>
+                <output name="total">350.000đ</output>
+            </td>
         </tfoot>
     </table>
+    <label>Điểm tích lũy:</label>
+        <meter min="0" max="100" low="30" high="70" optimum="80" value="85"></meter>
+    <span>Bạn là đại gia</span>
     <form action="#" method="POST" id="paymentForm">
         <fieldset class="payment">
             <legend>Thanh toán</legend>
-            <input type="radio" name="method" id="cod">
+            <input type="radio" name="method" id="cod" checked>
             <label for="cod">COD</label>
             <input type="radio" name="method" id="tranfer">
             <label for="tranfer"> Chuyển khoản</label>
             <input type="radio" name="method" id="electronicWallet">
             <label for="electronicWallet"> Ví điện tử</label>
-
+            <br>
             <label for="sale">Mã giảm giá:</label>
             <input type="text" 
             name="sale" 
@@ -63,6 +83,60 @@
             <label for="note">Ghi chú:</label>
             <textarea name="note" id="note"></textarea>
         </fieldset>
+        <fieldset class="delivery-info">
+            <legend>Thông tin giao hàng</legend>
+            <label for="city">Thành phố:</label>
+            <select name="city" id="city">
+                <option value="">--Chọn thành phố--</option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="hungyen">Hưng Yên</option>
+                <option value="bacninh">Bắc Ninh</option>
+                <option value="hagiang">Hà Giang</option>
+                <option value="caobang">Cao Bằng</option>
+            </select>
+
+            <label for="district">Quận/huyện:</label>
+            <select name="district" id="district">
+                <option value="">--Chọn quận/huyện--</option>
+                <option value="kienxuong">Kiến Xương</option>
+                <option value="tienhai">Tiền Hải</option>
+                <option value="hungha">Hưng Hà</option>
+            </select>
+            
+            <label for="address">Địa chỉ chi tiết:</label>
+            <textarea name="address" 
+            id="address"
+            rows="3">
+            </textarea>
+
+            <p>Giới tính:</p>
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" >
+            <label for="female">Nữ</label>
+            <input type="radio" name="gender" id="other" >
+            <label for="other">Khác</label>
+            <br>
+            <label for="date">Ngày giao hàng mong muốn: </label>
+            <input type="date" 
+            name="date"
+            id="date"
+            min="2026-05-10">
+            <label for="time">Khung giờ: </label>
+            <select name="time" id="time">
+                <option value="sang">Sáng 8-12h</option>
+                <option value="chieu">Chiều 14-18h </option>
+                <option value="toi">Tối 18-21h</option>
+            </select>
+            <label for="deliveryTime">Thời gian giao hàng: </label>
+            <input type="range" 
+            name="deliveryTime" 
+            id="deliveryTime"
+            min="1"
+            max="7"
+            step="1">
+        </fieldset>
+        <button type="submit" aria-label="Xác nhận đặt hàng">Xác nhận đặt hàng</button>
     </form>
 </body>
 </html>
