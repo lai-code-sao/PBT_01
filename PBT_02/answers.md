@@ -53,10 +53,33 @@ Trường hợp	        | Thuộc tính gây lỗi    | Validity State (Thực t
  Gõ "abc123"  | pattern="[0-9]{10}" | patternMismatch: true | có        |
  Gõ "123"     | minlength="8"       | tooShort: true        | có        |
 
-Câu A3 - Accessibility
+Câu A3 - Accessibility (tuan_1_html5/07_forms_interactive.md + mục 3)  
+1.  `<label for="email">` quan trọng cho người dùng screen reader vì screen reader sẽ thông báo cho người dùng biết họ cần nhập dữ liệu gì vào ô này  
+2. Dùng `<fieldset`> + `<legend>` để nhóm các dữ liệu đầu vào có liên quan với nhau
+VD:  
+```html
+<fieldset class="account">
+  <legend>Tài khoản</legend>
+  <label for="username">Username:</label>
+  <input type="text"
+  name="username" 
+  id="username"
+  placeholder="Tên tài khoản"
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,20}">
+  <label for="password">Password:</label>
+  <input type="password" 
+  name="password" 
+  id="password"
+  pattern="(?=.*\d)(?=.*[A-Z]).+"
+  minlength="8"
+  placeholder="Mật khẩu">
+</fieldset>
+```
+3.  
+- aria-label dùng khi muốn cung cấp thông tin mô tả cho các thiết bị hỗ trợ (screen reader)
+- KHÔNG nên dùng aria-label khi đã có `<label>` vì screen reader sẽ đọc bị lặp nội dung mô tả
 
-
-Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)
+Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)  
 1. Thuộc tính loading="lazy" trên thẻ `<img>`. 
 - Cải thiện tốc độ tải của trang web
 - Không nên dùng cho những hình ảnh xuất hiện khi vừa mở trang đã thấy
