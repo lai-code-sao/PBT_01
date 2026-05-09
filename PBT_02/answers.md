@@ -66,7 +66,7 @@ Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)
 + ```html<source src="review.webm" type="video/webm"> ```
 + ```html<source src="review.mp4" type="video/mp4">```
 + ```html<source src="movie.ogv" type="video/ogg">```
-3.
+3. 
 - Thuộc tính alt trên `<img>` dùng để mô tả hình ảnh khi ảnh bị lỗi hoặc giúp trình đọc màn hình hiểu nội dung hình ảnh
 - alt tốt cho 3 trường hợp:
 + Ảnh sản phẩm iPhone 16 -> alt="iPhone 16 Pro Max 265GB màu Titan"
@@ -105,4 +105,8 @@ VD 2: Biểu đồ trong báo cáo hệ thống
     <img src="images/use-case-diagram.png" alt="Sơ đồ Use Case quản lý thư viện">
     <figcaption>Biểu đồ 2.1: Các tương tác chính của thủ thư và sinh viên với hệ thống.</figcaption>
 </figure> 
-```   
+```    
+Phần B:  
+Câu B1 - Form Đăng ký Tài khoản (tuan_1_html5/07_forms_interactive.md + mục 3)  
+HTML không thể validate confirm password vì các thuộc tính như required, minlength, hay pattern của HTML chỉ có thể kiểm tra dữ liệu của chính ô đó dựa trên một quy tắc cố định nên không kiểm tra được "Sự trùng khớp".
+
