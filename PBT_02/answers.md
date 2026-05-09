@@ -133,3 +133,74 @@ Phần B:
 Câu B1 - Form Đăng ký Tài khoản (tuan_1_html5/07_forms_interactive.md + mục 3)  
 HTML không thể validate confirm password vì các thuộc tính như required, minlength, hay pattern của HTML chỉ có thể kiểm tra dữ liệu của chính ô đó dựa trên một quy tắc cố định nên không kiểm tra được "Sự trùng khớp".
 
+Phần C:  
+Câu C1 - Debug Form (tuan_1_html5/07_forms_interactive.md + mục 3)  
+Lỗi 1: Dòng 2 — Input "Tên" không có `<label for="...">`, vi phạm accessibility  
+Sửa:  
+```html
+<label for="name">Tên:</label>
+<input type="text" id="name" name="name" required>
+```  
+Lỗi 2: Dòng 4 — Input "Email" không có `<label for="...">`, vi phạm accessibility  
+Sửa:  
+```html
+<label for="email">Email:</label>
+<input type="email" 
+id="email" 
+name="email" 
+placeholder="Email của bạn" 
+required>
+```  
+Lỗi 3: Dòng 6 — Input "Mật khẩu" không có `<label for="...">`, vi phạm accessibility  
+Sửa:  
+```html
+<label for="password">Mật khẩu:</label>
+<input type="password" 
+id="password" 
+name="password"
+placeholder="Mật khẩu" 
+required>
+```  
+Lỗi 4: Dòng 7 — Input "Nhập lại mật khẩu" không có `<label for="...">`, vi phạm accessibility  
+Sửa:  
+```html
+<label for="email">Nhập lại mật khẩu:</label>
+<input type="password"
+id="re-enterPwd" 
+name="re-enterPwd" 
+placeholder="Nhập lại mật khẩu"
+required>
+```  
+Lỗi 5: Dòng 9 — Input "Phone" không có `<label for="...">`, vi phạm accessibility  
+Sửa:  
+```html
+<label for="phoneNumber">Phone: </label>
+<input type="tel" 
+name="phoneNumber" 
+id="phonNumber"
+pattern="0[0-9]{9}"
+required>
+```  
+Lỗi 6: Dòng 10->14 — Select không có `<label for="...">`, vi phạm accessibility  
+Sửa:  
+```html
+<label for="city">Thành phố: </label>
+<select id="city">
+  <option>Hà Nội</option>
+  <option>TP.HCM</option>
+</select>
+```  
+Lỗi 7: Dòng 16->18 — Label không có `<input type="..." name="..." id="...">`, vi phạm accessibility  
+Sửa:  
+```html
+<input type="checkbox" name="clause" id="clause">
+<label for="clause">
+  Tôi đồng ý điều khoản
+</label>
+```  
+Lỗi 8: Dòng 20 — Dùng thẻ `<input type="submit">` thay vì dùng `<button type="submit">`, vi phạm best practices  
+Sửa:  
+```html
+<button type="submit" aria-label="Gửi">Gửi</button>
+```  
+
