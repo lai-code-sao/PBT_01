@@ -203,4 +203,16 @@ Sửa:
 ```html
 <button type="submit" aria-label="Gửi">Gửi</button>
 ```  
+Câu C2:  
+1.  
+Pattern regex cho CMND/CCCD: pattern="[0-9]{12}"  
+Pattern regex cho Số tài khoản: pattern="[0-9]{10,15}"    
+2. HTML5 validation chưa đủ an toàn cho ứng dụng ngân hàng vì nó chỉ là ngôn ngữ đánh dấu văn bản không có tạo được các chức năng đảm bảo an toàn cao hơn như xác thực mật khẩu, gửi mã SMS,... các kẻ tấn công thường có thể vượt qua frontend một cách dễ dàng 
+3. 3 loại validation mà HTML5 KHÔNG THỂ làm được (phải dùng JavaScript):   
+- So sánh khớp mật khẩu
+- Kiểm tra hợp lệ
+- Kiểm tra tồn tại trong CSDL
+4. 2 rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend:  
+- Kẻ tấn công vượt qua giao diện để gửi dữ liệu và backend không kiểm tra lại dữ liệu có thể bị tấn công tiêm nhiễm dữ liệu 
+- Khai thác lỗi phân quyền nếu backend không xác thực thông tin người dùng
 
