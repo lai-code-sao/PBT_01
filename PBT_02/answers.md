@@ -203,7 +203,7 @@ Sửa:
 ```html
 <button type="submit" aria-label="Gửi">Gửi</button>
 ```  
-Câu C2:  
+Câu C2 - Thiết kế chiến lược Validation (tuan_1_html5/07_forms_interactive.md + mục3, mục 7)   
 1.  
 Pattern regex cho CMND/CCCD: pattern="[0-9]{12}"  
 Pattern regex cho Số tài khoản: pattern="[0-9]{10,15}"    
