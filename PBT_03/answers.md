@@ -53,7 +53,8 @@ h1 { color: #2563eb; font-size: 32px; }
 
 Nếu cùng 1 element có cả 3 cách CSS đồng thời áp dụng, cách viết sau cùng "thắng" vì trình duyệt phân tích từ trên xuống dưới.  
 
-Câu A2 -  CSS Selectors — Dự đoán kết quả
+Câu A2 -  CSS Selectors — Dự đoán kết quả (tuan_2_css_core
+/09_css_selectors.md + mục 2, mục 3)  
 1. h1                     → Chọn: Tất cả thẻ h1
 2. .price                 → Chọn: Thẻ có class="price"
 3. #app header            → Chọn: Thẻ header nằm trong thẻ có id="app" 
@@ -63,3 +64,18 @@ Câu A2 -  CSS Selectors — Dự đoán kết quả
 7. a[href="/"]            → Chọn: Thẻ a có thuộc tính href="/"
 8. .top-bar.dark h1       → Chọn: Thẻ h1 nằm trong thẻ có class="top-bar dark"  
 <img src="/PBT_03/images/selectors_test.png" alt="Ảnh kiểm chứng đáp án">  
+
+Câu A3 - Box Model — Tính toán kích thước (tuan_2_css_core
+/11_box_model.md + mục 3)  
+TH1: content-box  
+→ Chiều rộng hiển thị = 400+20x2+5x2 = 450px  
+→ Không gian chiếm trên trang = 450+10x2 = 470px  
+TH2: border-box  
+→ Chiều rộng hiển thị = 400px  
+→ Kích thước content thực tế = 400-20x2-5x2 = 350px  
+→ Không gian chiếm trên trang = 400+10x2 = 420px  
+TH3: Margin collapse  
+→ Khoảng cách giữa box-a và box-b = 40px  
+→ KHÔNG PHẢI 65px vì margin collapse nên margin dọc giữa 2 block element GỘPLẠI = lấy cái LỚN HƠN  
+
+Nếu .box-a có margin-bottom: -10px và .box-b có margin-top: 40px, khoảng cách = 40px  
