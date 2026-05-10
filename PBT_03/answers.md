@@ -90,3 +90,67 @@ Rule D: `p.price` = 0-1-1 = 11
 2. Element sẽ có màu đỏ vì specificity 100 cao nhất.  
 3. Nếu thêm ```html<p class="price" id="main-price" style="color: orange;">```, element có màu cam.  
 4. Nếu Rule A thêm `!important`, element có màu đen vì `!important` có  specificity vô hạn.  
+
+Phần C:
+Câu C1 - Debug CSS Layout (tuan_2_css_core
+/11_box_model.md + mục 3)  
+1.  (content-box!)  
+Chiều rộng thực tế của sidebar: 300+20x2+1x2 = 342px  
+Chiều rộng thực tế của content: 660+30x2+1x2 = 722px  
+2. Layout bị vỡ do kích thước container khi tính toán < kích thước container thực tế.  
+3. Có 2 cách sửa khác nhau:  
+Cách 1: Dùng border-box
+```css
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+}
+.content {
+    width: 660px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    float: left;
+}
+```  
+
+Cách 2: Không dùng border-box
+```css
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.sidebar {
+    width: 258px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+}
+.content {
+    width: 598px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    float: left;
+}
+```  
+4.  
+Cách 1: Dùng border-box  
+<img src="/PBT_03/images/debug_layout_c1.1.png" alt="Ảnh minh chứng cách 1">
+<img src="/PBT_03/images/debug_layout_c1.2.png" alt="Ảnh minh chứng cách 1">
+<img src="/PBT_03/images/debug_layout_c1.3.png" alt="Ảnh minh chứng cách 1">
+<img src="/PBT_03/images/debug_layout_c1.4.png" alt="Ảnh minh chứng cách 1">  
+
+Cách 2: Không dùng border-box  
+<img src="/PBT_03/images/debug_layout_c2.1.png" alt="Ảnh minh chứng cách 2">
+<img src="/PBT_03/images/debug_layout_c2.2.png" alt="Ảnh minh chứng cách 2">
+<img src="/PBT_03/images/debug_layout_c2.3.png" alt="Ảnh minh chứng cách 2">  
+
+
