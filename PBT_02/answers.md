@@ -1,16 +1,16 @@
 Phần A:  
 Câu A1 - Input Types (tuan_1_html5/07_forms_interactive.md + mục 3)  
 10 input types khác nhau trong HTML5:  
-1. type="text" -> Ô nhập text, giới hạn độ dài, kiểm tra nhập đúng định dạng (pattern) -> Dùng cho form đăng ký, đăng nhập
-2. type="email" → Ô nhập text, tự kiểm tra có @ → Dùng cho form đăng ký
-3. type="password" -> Các ký tự nhập vào được ẩn đi giới hạn độ dài (minlength), kiểm tra nhập đúng định dạng (pattern) -> Dùng cho ô nhập mật khẩu đăng nhập hoặc xác nhận thanh toán
-4. type="number" -> Ô nhập có kèm nút chọn tăng/giảm, giới hạn giá trị (min/max), khoảng cách giá trị (step) -> Dùng để chọn số lượng sản phẩm muốn mua trong giỏ hàng
-5. type="tel" -> Bàn phím số trên mobile -> Dùng để nhập sôd điện thoại
-6. type="date" -> Bảng chọn lịch, giới hạn giá trị -> Dùng cho khách hàng nhập ngày sinh
-7. type="time" -> Bảng chọn giờ/phút, giới hạn giá trị -> Dùng để khách hàng chọn khung giờ giao hàng
-8. type="color" -> Bảng chọn màu khi click một ô hiển thị màu -> Dùng trong trang quản trị để tùy chỉnh màu sắc giao diện cửa hàng hoặc nhãn dán sản phẩm
-9. type="range" -> Một thanh trượt để chọn giá trị trong một khoảng định sẵn, giới hạn giá trị -> Dùng trong bộ lọc tìm kiếm để chọn khoảng giá sản phẩm
-10. type="file" -> Cửa sổ duyệt file trên thiết bị, giới hạn định dạng (accept) và số lượng (multiple) ->  Khách hàng tải ảnh hoặc video thực tế khi viết đánh giá (review) sản phẩm  
+1. type="text" -> Ô nhập text, giới hạn độ dài, kiểm tra nhập đúng định dạng (pattern) -> Dùng cho form đăng ký, đăng nhập.
+2. type="email" → Ô nhập text, tự kiểm tra có @ → Dùng cho form đăng ký.
+3. type="password" -> Các ký tự nhập vào được ẩn đi giới hạn độ dài (minlength), kiểm tra nhập đúng định dạng (pattern) -> Dùng cho ô nhập mật khẩu đăng nhập hoặc xác nhận thanh toán.
+4. type="number" -> Ô nhập có kèm nút chọn tăng/giảm, giới hạn giá trị (min/max), khoảng cách giá trị (step) -> Dùng để chọn số lượng sản phẩm muốn mua trong giỏ hàng.
+5. type="tel" -> Bàn phím số trên mobile -> Dùng để nhập sôd điện thoại.
+6. type="date" -> Bảng chọn lịch, giới hạn giá trị -> Dùng cho khách hàng nhập ngày sinh.
+7. type="time" -> Bảng chọn giờ/phút, giới hạn giá trị -> Dùng để khách hàng chọn khung giờ giao hàng.
+8. type="color" -> Bảng chọn màu khi click một ô hiển thị màu -> Dùng trong trang quản trị để tùy chỉnh màu sắc giao diện cửa hàng hoặc nhãn dán sản phẩm.
+9. type="range" -> Một thanh trượt để chọn giá trị trong một khoảng định sẵn, giới hạn giá trị -> Dùng trong bộ lọc tìm kiếm để chọn khoảng giá sản phẩm.
+10. type="file" -> Cửa sổ duyệt file trên thiết bị, giới hạn định dạng (accept) và số lượng (multiple) ->  Khách hàng tải ảnh hoặc video thực tế khi viết đánh giá (review) sản phẩm.   
 
 Câu A2 - Validation Attributes (tuan_1_html5/07_forms_interactive.md + mục 3)  
 - TH1: 
@@ -54,8 +54,8 @@ Trường hợp	        | Thuộc tính gây lỗi    | Validity State (Thực t
  Gõ "123"     | minlength="8"       | tooShort: true        | có        |
 
 Câu A3 - Accessibility (tuan_1_html5/07_forms_interactive.md + mục 3)  
-1.  `<label for="email">` quan trọng cho người dùng screen reader vì screen reader sẽ thông báo cho người dùng biết họ cần nhập dữ liệu gì vào ô này  
-2. Dùng `<fieldset`> + `<legend>` để nhóm các dữ liệu đầu vào có liên quan với nhau
+1.  `<label for="email">` quan trọng cho người dùng screen reader vì screen reader sẽ thông báo cho người dùng biết họ cần nhập dữ liệu gì vào ô này.  
+2. Dùng `<fieldset`> + `<legend>` để nhóm các dữ liệu đầu vào có liên quan với nhau.
 VD:  
 ```html
 <fieldset class="account">
@@ -76,29 +76,31 @@ VD:
 </fieldset>
 ```
 3.  
-- aria-label dùng khi muốn cung cấp thông tin mô tả cho các thiết bị hỗ trợ (screen reader)
-- KHÔNG nên dùng aria-label khi đã có `<label>` vì screen reader sẽ đọc bị lặp nội dung mô tả
+- aria-label dùng khi muốn cung cấp thông tin mô tả cho các thiết bị hỗ trợ (screen reader).
+- KHÔNG nên dùng aria-label khi đã có `<label>` vì screen reader sẽ đọc bị lặp nội dung mô tả.
 
 Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)  
 1. Thuộc tính loading="lazy" trên thẻ `<img>`. 
-- Cải thiện tốc độ tải của trang web
-- Không nên dùng cho những hình ảnh xuất hiện khi vừa mở trang đã thấy
+- Cải thiện tốc độ tải của trang web.
+- Không nên dùng cho những hình ảnh xuất hiện khi vừa mở trang đã thấy.
 2. 
-- Nên cung cấp nhiều `<source>` trong thẻ `<video>` vì browser chọn ra cái phù hợp với thiết bị của người dùng  
+- Nên cung cấp nhiều `<source>` trong thẻ `<video>` vì browser chọn ra cái phù hợp với thiết bị của người dùng.  
 - 3 format video web phổ biến:
-+ ```html<source src="review.webm" type="video/webm"> ```
-+ ```html<source src="review.mp4" type="video/mp4">```
-+ ```html<source src="movie.ogv" type="video/ogg">```
+ ```html
+<source src="review.webm" type="video/webm"> 
+<source src="review.mp4" type="video/mp4">
+<source src="movie.ogv" type="video/ogg">
+ ```
 3. 
-- Thuộc tính alt trên `<img>` dùng để mô tả hình ảnh khi ảnh bị lỗi hoặc giúp trình đọc màn hình hiểu nội dung hình ảnh
+- Thuộc tính alt trên `<img>` dùng để mô tả hình ảnh khi ảnh bị lỗi hoặc giúp trình đọc màn hình hiểu nội dung hình ảnh.
 - alt tốt cho 3 trường hợp:
-+ Ảnh sản phẩm iPhone 16 -> alt="iPhone 16 Pro Max 265GB màu Titan"
-+ Ảnh trang trí (decorative) -> alt=""
-+ Ảnh biểu đồ doanh thu Q1/2026 -> alt="Biểu đồ đường hiển thị doanh thu quý 1 năm 2026 có xu hướng tăng"  
+  + Ảnh sản phẩm iPhone 16 -> alt="iPhone 16 Pro Max 265GB màu Titan"  
+  + Ảnh trang trí (decorative) -> alt=""  
+  + Ảnh biểu đồ doanh thu Q1/2026 -> alt="Biểu đồ đường hiển thị doanh thu quý 1 năm 2026 có xu hướng tăng"   
 
 Câu A5 - So sánh `<figure>` vs `<img>` (tuan_1_html5/06_graphics_multimedia.md + mục 3)  
-- Dùng Cách 1 khi ảnh chỉ mang tính chất trang trí hoặc minh họa nhỏ lẻ không cần chú thích
-- Dùng Cách 2 khi ảnh là một phần quan trọng của nội dung bài viết và cần có tiêu đề hoặc chú thích bên dưới  
+- Dùng Cách 1 khi ảnh chỉ mang tính chất trang trí hoặc minh họa nhỏ lẻ không cần chú thích.
+- Dùng Cách 2 khi ảnh là một phần quan trọng của nội dung bài viết và cần có tiêu đề hoặc chú thích bên dưới.  
 2 ví dụ thực tế cho mỗi cách:  
 Cách 1:  
 VD 1: Logo thương hiệu trên thanh điều hướng  
@@ -207,12 +209,12 @@ Câu C2 - Thiết kế chiến lược Validation (tuan_1_html5/07_forms_interac
 1.  
 Pattern regex cho CMND/CCCD: pattern="[0-9]{12}"  
 Pattern regex cho Số tài khoản: pattern="[0-9]{10,15}"    
-2. HTML5 validation chưa đủ an toàn cho ứng dụng ngân hàng vì nó chỉ là ngôn ngữ đánh dấu văn bản không có tạo được các chức năng đảm bảo an toàn cao hơn như xác thực mật khẩu, gửi mã SMS,... các kẻ tấn công thường có thể vượt qua frontend một cách dễ dàng 
+2. HTML5 validation chưa đủ an toàn cho ứng dụng ngân hàng vì nó chỉ là ngôn ngữ đánh dấu văn bản không có tạo được các chức năng đảm bảo an toàn cao hơn như xác thực mật khẩu, gửi mã SMS,... các kẻ tấn công thường có thể vượt qua frontend một cách dễ dàng. 
 3. 3 loại validation mà HTML5 KHÔNG THỂ làm được (phải dùng JavaScript):   
 - So sánh khớp mật khẩu
 - Kiểm tra hợp lệ
 - Kiểm tra tồn tại trong CSDL
 4. 2 rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend:  
-- Kẻ tấn công vượt qua giao diện để gửi dữ liệu và backend không kiểm tra lại dữ liệu có thể bị tấn công tiêm nhiễm dữ liệu 
-- Khai thác lỗi phân quyền nếu backend không xác thực thông tin người dùng
+- Kẻ tấn công vượt qua giao diện để gửi dữ liệu và backend không kiểm tra lại dữ liệu có thể bị tấn công tiêm nhiễm dữ liệu. 
+- Khai thác lỗi phân quyền nếu backend không xác thực thông tin người dùng.
 
