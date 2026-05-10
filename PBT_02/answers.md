@@ -1,6 +1,6 @@
 Phần A:  
 Câu A1 - Input Types (tuan_1_html5/07_forms_interactive.md + mục 3)  
-10 input types khác nhau trong HTML5:  
+10 input types khác nhau trong HTML5:
 1. type="text" -> Ô nhập text, giới hạn độ dài, kiểm tra nhập đúng định dạng (pattern) -> Dùng cho form đăng ký, đăng nhập.
 2. type="email" → Ô nhập text, tự kiểm tra có @ → Dùng cho form đăng ký.
 3. type="password" -> Các ký tự nhập vào được ẩn đi giới hạn độ dài (minlength), kiểm tra nhập đúng định dạng (pattern) -> Dùng cho ô nhập mật khẩu đăng nhập hoặc xác nhận thanh toán.
@@ -99,9 +99,9 @@ Câu A4 - Media (tuan_1_html5/06_graphics_multimedia.md + mục 3)
   + Ảnh biểu đồ doanh thu Q1/2026 -> alt="Biểu đồ đường hiển thị doanh thu quý 1 năm 2026 có xu hướng tăng"   
 
 Câu A5 - So sánh `<figure>` vs `<img>` (tuan_1_html5/06_graphics_multimedia.md + mục 3)  
-- Dùng Cách 1 khi ảnh chỉ mang tính chất trang trí hoặc minh họa nhỏ lẻ không cần chú thích.
+- Dùng Cách 1 khi ảnh chỉ mang tính chất trang trí hoặc minh họa nhỏ lẻ không cần chú thích.  
 - Dùng Cách 2 khi ảnh là một phần quan trọng của nội dung bài viết và cần có tiêu đề hoặc chú thích bên dưới.  
-2 ví dụ thực tế cho mỗi cách:  
+- 2 ví dụ thực tế cho mỗi cách:  
 Cách 1:  
 VD 1: Logo thương hiệu trên thanh điều hướng  
 ```html
@@ -209,11 +209,11 @@ Câu C2 - Thiết kế chiến lược Validation (tuan_1_html5/07_forms_interac
 1.  
 Pattern regex cho CMND/CCCD: pattern="[0-9]{12}"  
 Pattern regex cho Số tài khoản: pattern="[0-9]{10,15}"    
-2. HTML5 validation chưa đủ an toàn cho ứng dụng ngân hàng vì nó chỉ là ngôn ngữ đánh dấu văn bản không có tạo được các chức năng đảm bảo an toàn cao hơn như xác thực mật khẩu, gửi mã SMS,... các kẻ tấn công thường có thể vượt qua frontend một cách dễ dàng. 
+2. HTML5 validation chưa đủ an toàn cho ứng dụng ngân hàng vì nó chỉ là ngôn ngữ đánh dấu văn bản không có tạo được các chức năng đảm bảo an toàn cao hơn như xác thực mật khẩu, gửi mã SMS,... các kẻ tấn công thường có thể vượt qua frontend một cách dễ dàng.   
 3. 3 loại validation mà HTML5 KHÔNG THỂ làm được (phải dùng JavaScript):   
 - So sánh khớp mật khẩu
 - Kiểm tra hợp lệ
-- Kiểm tra tồn tại trong CSDL
+- Kiểm tra tồn tại trong CSDL  
 4. 2 rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend:  
 - Kẻ tấn công vượt qua giao diện để gửi dữ liệu và backend không kiểm tra lại dữ liệu có thể bị tấn công tiêm nhiễm dữ liệu. 
 - Khai thác lỗi phân quyền nếu backend không xác thực thông tin người dùng.
