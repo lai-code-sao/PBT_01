@@ -158,7 +158,7 @@ Câu C2 - Cascade Puzzle (tuan_2_css_core
 1. "Sản phẩm A" (h2) có font-size = 20px và color = green  
 `body { font-size: 16px; color: #333; }` -> font-size = 16px và color = #333  
 `.container { font-size: 14px; }` -> font-size = 14px và color = #333  
-`.card { color: blue; }` -> font-size = 14px và color = blue
+`.card { color: blue; }` -> font-size = 14px và color = blue  
 `.card .title { font-size: 20px; }` -> font-size = 20px và color = blue  
 `#featured .title { color: red; }` -> font-size = 20px và color = red  
 `.highlight { color: green !important; }` -> font-size = 20px và color = green    
@@ -167,10 +167,10 @@ Câu C2 - Cascade Puzzle (tuan_2_css_core
 `.container { font-size: 14px; }` -> color = #333  
 `.card { color: blue; }` -> color = blue  
 `.card p { color: inherit; }` -> color = blue  
-3. "Sản phẩm B" (h2) có font-size = 20px và color = blue
+3. "Sản phẩm B" (h2) có font-size = 20px và color = blue  
 `body { font-size: 16px; color: #333; }` -> font-size = 16px và color = #333  
 `.container { font-size: 14px; }` -> font-size = 14px và color = #333  
-`.card { color: blue; }` -> font-size = 14px và color = blue
+`.card { color: blue; }` -> font-size = 14px và color = blue  
 `.card .title { font-size: 20px; }` -> font-size = 20px và color = blue   
 4. "Mô tả sản phẩm B" (p.highlight) có color = green  
 `body { font-size: 16px; color: #333; }` -> color = #333  
