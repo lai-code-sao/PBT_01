@@ -213,7 +213,7 @@ Pattern regex cho Số tài khoản: pattern="[0-9]{10,15}"
 3. 3 loại validation mà HTML5 KHÔNG THỂ làm được (phải dùng JavaScript):   
 - So sánh khớp mật khẩu
 - Kiểm tra hợp lệ
-- Kiểm tra tồn tại trong CSDL  
+- Kiểm tra tồn tại trong CSDL
 4. 2 rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend:  
 - Kẻ tấn công vượt qua giao diện để gửi dữ liệu và backend không kiểm tra lại dữ liệu có thể bị tấn công tiêm nhiễm dữ liệu. 
 - Khai thác lỗi phân quyền nếu backend không xác thực thông tin người dùng.
