@@ -122,6 +122,86 @@ Phần 2:
 
 Nếu KHÔNG dùng border-box, thì chiều rộng thực tế của container:  250+15x2+500+20x2+250+15x2 = 1100px > 1000px  
 
+Câu B3 - Specificity Battle (tuan_2_css_core
+/10_inheritance_cascading.md + mục 3)
+1. 
+```css
+p{
+    color: blue;
+}
+```  
+-> Specificity: 0,0,1  
+2. 
+```css
+div>p{
+    color: chocolate;
+}
+```
+-> Specificity: 0,0,2  
+3. 
+```css
+.text{
+    color: gold;
+}
+```
+-> Specificity: 0,1,0  
+4. 
+```css
+h2+p{
+    color:black;
+}
+```
+-> Specificity: 0,0,2  
+5. 
+```css
+.content .highlight{
+    color:cadetblue;
+}
+```
+-> Specificity: 0,2,0  
+6. 
+```css
+h2~p{
+    color:aqua;
+}
+```
+-> Specificity: 0,0,2  
+7. 
+```css
+.container div #demo{
+    color:fuchsia;
+}
+```
+-> Specificity: 1,1,1  
+8. 
+```css
+#container p{
+    color: darkmagenta;
+}
+```
+-> Specificity: 1,0,1
+9. 
+```css
+#content p{
+    color: darkcyan;
+}
+```
+-> Specificity: 1,0,1
+10. 
+```css
+#demo{
+    color: brown;
+}
+```
+-> Specificity: 1,0,0  
+
+=> Element cuối cùng hiển thị màu fuchsia vì specificity của rule là lớn nhất.  
+
+Kết quả:  
+<img src="/PBT_03/images/anh_kq.png" alt="Ảnh kết quả">  
+
+- Thay đổi thứ tự rule trong CSS file thì kết quả không đổi vì specificity 111 là lớn nhất và không có cái nào cùng mức viết sau nó.  
+
 Phần C:
 Câu C1 - Debug CSS Layout (tuan_2_css_core
 /11_box_model.md + mục 3)  
