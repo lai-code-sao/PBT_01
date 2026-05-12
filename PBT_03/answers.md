@@ -123,7 +123,7 @@ Phần 2:
 Nếu KHÔNG dùng border-box, thì chiều rộng thực tế của container:  250+15x2+500+20x2+250+15x2 = 1100px > 1000px  
 
 Câu B3 - Specificity Battle (tuan_2_css_core
-/10_inheritance_cascading.md + mục 3)
+/10_inheritance_cascading.md + mục 3)  
 1. 
 ```css
 p{
@@ -158,35 +158,35 @@ h2+p{
     color:cadetblue;
 }
 ```
--> Specificity: 0,2,0  
+-> Specificity: 0,2,0   
 6. 
 ```css
 h2~p{
     color:aqua;
 }
 ```
--> Specificity: 0,0,2  
+-> Specificity: 0,0,2   
 7. 
 ```css
 .container div #demo{
     color:fuchsia;
 }
 ```
--> Specificity: 1,1,1  
+-> Specificity: 1,1,1   
 8. 
 ```css
 #container p{
     color: darkmagenta;
 }
 ```
--> Specificity: 1,0,1
+-> Specificity: 1,0,1  
 9. 
 ```css
 #content p{
     color: darkcyan;
 }
 ```
--> Specificity: 1,0,1
+-> Specificity: 1,0,1  
 10. 
 ```css
 #demo{
