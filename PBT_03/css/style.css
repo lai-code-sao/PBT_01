@@ -9,7 +9,7 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom, rgb(193, 99, 224),rgb(231, 138, 227), rgb(247, 144, 149));
-    color:white;
+    color: white;
     line-height: 1.8;
     padding: 20px;
 }
@@ -21,10 +21,23 @@ nav>ul{
     list-style: none;
 }
 nav>ul>li>a:hover{
-    color:rgb(163, 247, 255);
+    color: rgb(163, 247, 255);
     text-decoration: underline;
 }
 .active:active{
-    color:rgb(208, 255, 20);
+    color: rgb(208, 255, 20);
     font-size: larger;
+}
+section>table{
+    border-collapse: collapse;
+}
+section>table>thead{
+    background-color: blueviolet;
+    color: white;
+}
+section>table tr:nth-child(even){
+    background-color: rgb(195, 241, 209);
+}
+section>table tr:hover{
+    background-color: plum;
 }
