@@ -20,4 +20,11 @@ nav>ul>li>a{
 nav>ul{
     list-style: none;
 }
-
+nav>ul>li>a:hover{
+    color:rgb(163, 247, 255);
+    text-decoration: underline;
+}
+.active:active{
+    color:rgb(208, 255, 20);
+    font-size: larger;
+}
