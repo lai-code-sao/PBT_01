@@ -91,6 +91,21 @@ Rule D: `p.price` = 0-1-1 = 11
 3. Nếu thêm ```html<p class="price" id="main-price" style="color: orange;">```, element có màu cam.  
 4. Nếu Rule A thêm `!important`, element có màu đen vì `!important` có  specificity vô hạn.  
 
+Phần B:  
+Câu B2 - Box Model Lab (tuan_2_css_core
+/11_box_model.md + mục 3)  
+Phần 1:  
+
+`Content-box`  
+<img src="/PBT_03/images/demo_content_box.png" alt="Ảnh demo hộp dùng content-box">  
+
+`Border-box`
+<img src="/PBT_03/images/demo_border_box.png" alt="Ảnh demo hộp dùng border-box">  
+
+Hộp 1 (content-box): chiều rộng thực tế = 350px (đo từ DevTools)  
+Hộp 2 (border-box): chiều rộng thực tế = 300px (đo từ DevTools)  
+Giải thích sự khác biệt: Với border-box, padding và border co vào trong. Với content-box, padding và border phình ra ngoài.  
+
 Phần C:
 Câu C1 - Debug CSS Layout (tuan_2_css_core
 /11_box_model.md + mục 3)  
