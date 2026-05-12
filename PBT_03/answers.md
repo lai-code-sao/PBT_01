@@ -106,6 +106,22 @@ Hộp 1 (content-box): chiều rộng thực tế = 350px (đo từ DevTools)
 Hộp 2 (border-box): chiều rộng thực tế = 300px (đo từ DevTools)  
 Giải thích sự khác biệt: Với border-box, padding và border co vào trong. Với content-box, padding và border phình ra ngoài.  
 
+Phần 2:  
+
+`Content-box`  
+<img src="/PBT_03/images/B2P2_demo_content_box.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/images/B2P2_demo_content_box1.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/images/B2P2_demo_content_box2.png" alt="Ảnh demo hộp dùng content-box">  
+<img src="/PBT_03/images/B2P2_demo_content_box3.png" alt="Ảnh demo hộp dùng content-box">  
+
+`Border-box`
+<img src="/PBT_03/images/B2P2_demo_border_box.png" alt="Ảnh demo hộp dùng border-box">   
+<img src="/PBT_03/images/B2P2_demo_border_box1.png" alt="Ảnh demo hộp dùng border-box">   
+<img src="/PBT_03/images/B2P2_demo_border_box2.png" alt="Ảnh demo hộp dùng border-box">   
+<img src="/PBT_03/images/B2P2_demo_border_box3.png" alt="Ảnh demo hộp dùng border-box">   
+
+Nếu KHÔNG dùng border-box, thì chiều rộng thực tế của container:  250+15x2+500+20x2+250+15x2 = 1100px > 1000px  
+
 Phần C:
 Câu C1 - Debug CSS Layout (tuan_2_css_core
 /11_box_model.md + mục 3)  
