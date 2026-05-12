@@ -8,7 +8,7 @@ body{
     line-height: 1.5;
 }
 header{
-    background-image: linear-gradient(to bottom, rgb(193, 99, 224),rgb(231, 138, 227), rgb(247, 144, 149));
+    background-image: linear-gradient(to bottom, rgb(212, 148, 233),rgb(232, 139, 187), rgb(247, 144, 149));
     color: white;
     line-height: 1.8;
     padding: 20px;
@@ -21,12 +21,16 @@ nav>ul{
     list-style: none;
 }
 nav>ul>li>a:hover{
-    color: rgb(163, 247, 255);
+    color: rgb(148, 232, 210);
     text-decoration: underline;
 }
 .active:active{
-    color: rgb(208, 255, 20);
+    color: rgb(137, 255, 20);
     font-size: larger;
+}
+#aboutMe img{
+    width: 10rem;
+    height:10rem;
 }
 section>table{
     border-collapse: collapse;
@@ -40,4 +44,9 @@ section>table tr:nth-child(even){
 }
 section>table tr:hover{
     background-color: plum;
+}
+footer{
+    background-color: rgb(72, 61, 139);
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
