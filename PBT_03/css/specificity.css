@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    color: blue;
+}
+div>p{
+    color: chocolate;
+}
+.text{
+    color: gold;
+}
+h2+p{
+    color:black;
+}
+.content .highlight{
+    color:cadetblue;
+}
+h2~p{
+    color:aqua;
+}
+.container div #demo{
+    color:fuchsia;
+}
+#container p{
+    color: darkmagenta;
+}
+#content p{
+    color: darkcyan;
+}
+#demo{
+    color: brown;
+}
