@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 header{
     position: sticky;
     display: flex;
@@ -25,20 +28,7 @@ nav:hover{
         display: flex;
     }
 }
-.hero{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgb(102, 169, 252),rgb(162, 98, 241),rgb(181, 80, 181));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cta-button{
-    background-color: white;
-    border-radius: 10rem;
-    width: 7rem;
-    height: 10rems;
-    
-}
+
 
 
 
