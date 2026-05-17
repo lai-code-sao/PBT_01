@@ -1,6 +1,7 @@
 Phần A:  
 Câu A1 - 5 Loại Positioning (tuan_2_css_core/12_css_positioning.md + mục 2, mục 3)   
 Position|Vẫn chiếm chỗ trong flow?|Tham chiếu vị trí            |Cuộn theo trang?      |Use case                                    |
+|---    |---                      |---                          |---                   |---                                         |
 static  |Có                       |Mặc định        	            |Có	                   |Mặc định — không cần viết                   |
 relative|Có                       |Dịch so với vị trí gốc	    |Có	                   |Làm anchor cho absolute con, dịch nhẹ       |
 absolute|Không                    |Bám vào cha relative gần nhất|Có                    |Badge, dropdown, tooltip, overlay           |
