@@ -47,3 +47,17 @@ Câu A2 - Flexbox vs Grid (tuan_3_css_advanced/13_creating_responsive_layouts.md
 7 items → Bố cục = 1 hàng item cuối gắn sát về bên phải container.  
 <img src="/PBT_04/images/A2_hinh5.jpg" alt="Sơ đồ bố cục 1 hàng item cuối gắn sát về bên phải">
 
+Phần B:
+Câu B1 - Positioning Playground (tuan_3_css_advanced/13_creating_responsive_layouts.md + mục 3)  
+- Trạng thái header khi scroll  
+<img src="/PBT_04/images/B1_hinh1.png" alt="Trạng thái header khi scroll">
+
+- Trạng thái sidebar khi scroll  
+<img src="/PBT_04/images/B1_hinh2.png" alt="Trạng thái sidebar khi scroll">
+
+- Badge trên card  
+<img src="/PBT_04/images/B1_hinh3.png" alt="Badge trên card">
+
+
+
+
