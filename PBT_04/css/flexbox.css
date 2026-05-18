@@ -4,6 +4,7 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
 }
+/* Navbar */
 header{
     display: flex;
     background-color: plum;
@@ -30,4 +31,28 @@ header button{
     background-color: dodgerblue;
     color: white;
     border: 1px solid;
+}
+/* Product Cards Grid */
+img{
+    width: 15rem;
+    height: 15rem;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(25%-20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* Thống nhất kích thước card */
+    width: 17rem;
+    height: 27rem;
+    margin-top: auto;
+}
+.card button{
+    margin-top: auto;
 }
