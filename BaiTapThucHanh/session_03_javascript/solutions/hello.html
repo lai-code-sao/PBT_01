@@ -67,6 +67,14 @@
         else{
            console.log("Yếu") 
         }
+        // Bài 0.7:
+        let monAnYeuTich=["Trứng rán","Cơm rang","Rau muống luộc","Vịt quay","Thịt lợn kho"];
+        monAnYeuTich.push("Thịt gà kho gừng");
+        monAnYeuTich.pop();
+        monAnYeuTich.forEach((mon,index)=>{
+            console.log(`Món ${index+1}: ${mon}`);
+        });
+        console.log(`Phở có trong mảng: ${monAnYeuTich.includes("Phở")}`);
     </script>
 </body>
 </html>
