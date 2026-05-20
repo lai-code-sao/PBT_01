@@ -67,6 +67,7 @@
         else{
            console.log("Yếu") 
         }
+
         // Bài 0.7:
         let monAnYeuTich=["Trứng rán","Cơm rang","Rau muống luộc","Vịt quay","Thịt lợn kho"];
         monAnYeuTich.push("Thịt gà kho gừng");
@@ -75,6 +76,23 @@
             console.log(`Món ${index+1}: ${mon}`);
         });
         console.log(`Phở có trong mảng: ${monAnYeuTich.includes("Phở")}`);
+
+        // Bài 0.8:
+        let hoSo = {
+            hoTen: "Vũ Anh",
+            tuoi: 20,
+            nganh: "KTPM",
+            soThich: ["Ngủ","Ăn","Chơi"],
+            diaChi:{
+                duong: "Quan Nhân",
+                quan: 1,
+                tinh: "tpHCM"
+            }
+        };
+        console.log(`Tôi là ${hoSo.hoTen}, ${hoSo["tuoi"]} tuổi, học ngành ${hoSo.nganh}`);
+        console.log(`Sở thích đầu tiên: ${hoSo.soThich[0]}`);
+        console.log(`Tôi ở đường ${hoSo.diaChi.duong}, quận ${hoSo.diaChi.quan}, thành phố ${hoSo.diaChi.tinh}`);
+        hoSo.email = "abc@gmail.com";
     </script>
 </body>
 </html>
