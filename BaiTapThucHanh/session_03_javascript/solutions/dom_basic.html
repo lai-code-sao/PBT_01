@@ -37,7 +37,14 @@
         li.forEach((element,index)=>{
             element.textContent+="(đã học)";
         });
-        // Bài 0B.2:
+
+        // Bài 0B.4:
+        li.forEach((element,index)=>{
+            element.setAttribute("class","highlight");
+            element.setAttribute("data-index",index);
+        });
+        document.title = "DOM Practice";
+
         // Bài 0B.2:
         // Bài 0B.2:
         // Bài 0B.2:
