@@ -94,7 +94,28 @@
         console.log(`Tôi ở đường ${hoSo.diaChi.duong}, quận ${hoSo.diaChi.quan}, thành phố ${hoSo.diaChi.tinh}`);
         hoSo.email = "abc@gmail.com";
         // Bai 0.9:
-        
+        function maxHaiSo(a, b){
+            if(a>b){
+                return a;
+            }
+            else return b;
+        };
+        function laNamNhuan(nam){
+            if((nam%4===0&&nam%100!==0)||nam%400===0){
+                return true;
+            }
+            else return false;
+        }
+        function gioiThieu(hoTen, tuoi, nganh){
+            console.log(`Tôi là ${hoTen}, ${tuoi} tuổi, học ngành ${nganh}`);
+        }
+        function tinhGiaBan(giaGoc, giamGia = 0){
+            return giaGoc - giaGoc * giamGia;
+        };
+        console.log(`Số lớn nhất trong2 số 30 và 35 là: `,maxHaiSo(30,35));
+        console.log(`Năm 2340 là năm nhuận: `,laNamNhuan(2340));
+        gioiThieu("Anh",35,"CK")
+        console.log(`Giá sau giảm 10%: `,tinhGiaBan(34,0.1));
     </script>
 </body>
 </html>
