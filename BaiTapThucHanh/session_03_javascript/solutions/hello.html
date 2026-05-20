@@ -31,8 +31,20 @@
         let sanPham = "Laptop";
         let soLuong = 2;
         let donGia = 15000000;
-        let chuoiHienThi = `Hóa đơn: ${soLuong} x ${sanPham} = ${soLuong * donGia} VNĐ`; 
-        console.log(chuoiHienThi);
+        let tongTien = soLuong * donGia;
+        console.log(`Hóa đơn: ${soLuong} x ${sanPham} = ${(tongTien).toLocaleString()} VNĐ`);
+
+        // Bài 0.5:
+        const PI = 3.14159;
+        let banKinh = 5;
+        let dienTich = PI * (banKinh^2);
+        let chuVi = 2 * PI * banKinh;
+        let thongBao = `
+        PI = ${PI}
+        Bán kính = ${banKinh} 
+        Diện tích = ${dienTich}
+        Chu vi = ${chuVi}`
+        console.log(thongBao);
     </script>
 </body>
 </html>
