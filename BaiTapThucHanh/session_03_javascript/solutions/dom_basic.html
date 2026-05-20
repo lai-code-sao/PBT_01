@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Basics</title>
+</head>
+<body>
+    <h1 id="title">Xin chào DOM!</h1>
+    <p class="description">Đây là đoạn văn đầu tiên</p>
+    <p class="description">Đây là đoạn văn thứ hai</p>
+    <ul id="danh-sach">
+        <li class="item">HTML</li>
+        <li class="item">CSS</li>
+        <li class="item">JavaScript</li>
+    </ul>
+
+    <script>
+        // Mở Console (F12) để xem kết quả
+        console.log("Document:", document);
+        console.log("Title:", document.title);
+        console.log("Body:", document.body);
+
+        // Bài 0B.2:
+        const h1 = document.getElementById("title");
+        const p = document.querySelector(".description");
+        const li = document.querySelectorAll('.item');
+        console.log(h1.textContent);
+        console.log(p.textContent);
+        console.log(li);
+        
+        // Bài 0B.3:
+        h1.textContent = "Vũ Mai Anh";
+        p.textContent = "Tôi đang học DOM";
+        const fistLi = document.querySelector(".item");
+        fistLi.textContent = "HTML5";
+        fistLi.innerHTML = "<strong>HTML5</strong>";
+        
+        // Bài 0B.2:
+        // Bài 0B.2:
+        // Bài 0B.2:
+        // Bài 0B.2:
+        // Bài 0B.2:
+
+        // Bài 0B.2:
+    </script>
+</body>
+</html>
